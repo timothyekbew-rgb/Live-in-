@@ -1,60 +1,71 @@
+body {
+  background-color: #f9fff8;
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  color: #2a2a2a;
+}
 
-    body {
-      background-color: #e5ecf7;
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      color: #2a2a2a;
-    }
+.profile-box {
+  max-width: 900px;
+  padding: 30px 40px;
+  border: 2px solid #ffffff; /* border biru muda */
+  border-radius: 8px;
+  background-image: url("Fotosantamaria.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #000000;
+  overflow: hidden;
+  margin: auto;
+  box-sizing: border-box;
+}
 
-    .profile-box {
-      max-width: 900px;
-      padding: 30px 40px;
-      border: 2px solid #749ec6; /* border biru muda */
-      border-radius: 8px;
-      background-image: url('Foto\ santamaria.jpeg');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      color: #2a2a2a;
-      overflow: hidden;
-      margin: auto;
-      box-sizing: border-box;
-    }
+.profile-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+  z-index: 1;
+}
+.profile-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+  z-index: -1;
+}
 
-    /* Overlay putih transparan untuk agar teks lebih jelas */
-    .profile-box::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(255, 255, 255, 0.85);
-      border-radius: 8px;
-      z-index: 1;
-    }
+.profile-box > * {
+  position: relative;
+  z-index: 2;
+}
 
-    /* Konten di atas overlay */
-    .profile-box > * {
-      position: relative;
-      z-index: 2;
-    }
+.profile-box h1 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #006838; /* hijau gelap */
+  margin-bottom: 5px;
+}
 
-    .profile-box h1 {
-      font-size: 28px;
-      font-weight: 900;
-      color: #006837; /* hijau gelap */
-      margin-bottom: 5px;
-    }
+.profile-box h3 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 0 20px 0;
+  color: #444444;
+}
 
-    .profile-box h3 {
-      font-style: italic;
-      font-weight: 700;
-      font-size: 14px;
-      margin: 0 0 20px 0;
-      color: #444444;
-    }
-
-    .profile-box p {
-      font-size: 14px;
-      line-height: 1.6;
-      text-align: justify;
-      margin: 0;
-    }
+.profile-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0;
+}
