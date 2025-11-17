@@ -2,7 +2,7 @@
   padding: 30px 40px;
   border: 2px solid #749ec6;
   border-radius: 8px;
-  background-image: url("Fotosantamaria.jpeg");
+  background-image: url("assets/img/Fotosantamaria.jpeg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -131,4 +131,8 @@ footer {
 
 .col {
   text-align: justify;
+}
+
+.flex-parent {
+  display: flex;
 }
