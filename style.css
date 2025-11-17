@@ -1,131 +1,134 @@
+.profile-box {
+  padding: 30px 40px;
+  border: 2px solid #749ec6;
+  border-radius: 8px;
+  background-image: url("Fotosantamaria.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #2a2a2a;
+  overflow: hidden;
+  margin: auto;
+  box-sizing: border-box;
+}
 
+.profile-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  z-index: 1;
+}
 
-    .profile-box {
-      max-width: 900px;
-      padding: 30px 40px;
-      border: 2px solid #749ec6; /* border biru muda */
-      border-radius: 8px;
-      background-image: url('Foto\ santamaria.jpeg');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      color: #2a2a2a;
-      overflow: hidden;
-      margin: auto;
-      box-sizing: border-box;
-    }
+/* Konten di atas overlay */
+.profile-box > * {
+  position: relative;
+  z-index: 2;
+}
 
-    /* Overlay putih transparan untuk agar teks lebih jelas */
-    .profile-box::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(255, 255, 255, 0.85);
-      border-radius: 8px;
-      z-index: 1;
-    }
+.profile-box h1 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #006837; /* hijau gelap */
+  margin-bottom: 5px;
+}
 
-    /* Konten di atas overlay */
-    .profile-box > * {
-      position: relative;
-      z-index: 2;
-    }
+.profile-box h3 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 0 20px 0;
+  color: #606060;
+}
 
-    .profile-box h1 {
-      font-size: 28px;
-      font-weight: 900;
-      color: #006837; /* hijau gelap */
-      margin-bottom: 5px;
-    }
+.profile-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0;
+}
 
-    .profile-box h3 {
-      font-style: italic;
-      font-weight: 700;
-      font-size: 14px;
-      margin: 0 0 20px 0;
-      color: #606060;
-    }
-
-    .profile-box p {
-      font-size: 14px;
-      line-height: 1.6;
-      text-align: justify;
-      margin: 0;
-    }
-
-    body {
-    font-family: Arial, sans-serif;
-    background: #ffffff;
-    margin: 0;
-    padding: 0;
-    color: #333;
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 .container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 0;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 0;
 }
 
 .title {
-    text-align: center;
-    color: #048d3f;
-    font-size: 32px;
-    font-weight: bold;
+  text-align: center;
+  color: #048d3f;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .subtitle {
-    text-align: center;
-    margin-top: -10px;
-    margin-bottom: 40px;
-    color: #6d6d6d;
-    font-size: 14px;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 40px;
+  color: #6d6d6d;
+  font-size: 14px;
 }
 
 .testimonials {
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .col {
-    width: 30%;
-    min-width: 280px;
+  width: 30%;
+  min-width: 280px;
 }
 
 .profile {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    align-items: center;
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
 }
 
 .profile img {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
 }
 
 .profile span {
-    color: #1c8b4c;
-    font-size: 13px;
+  color: #1c8b4c;
+  font-size: 13px;
 }
 
 footer {
-    margin-top: 60px;
-    text-align: center;
-    padding-top: 30px;
-    border-top: 2px solid #1c8b4c;
+  margin-top: 60px;
+  text-align: center;
+  padding-top: 30px;
+  border-top: 2px solid #1c8b4c;
 }
 
 .footer h2 {
-    color: #1c8b4c;
-    margin-bottom: 5px;
+  color: #1c8b4c;
+  margin-bottom: 5px;
 }
 
 .phone {
-    font-size: 18px;
-    margin-top: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.col {
+  text-align: justify;
 }

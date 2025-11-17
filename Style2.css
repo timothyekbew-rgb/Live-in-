@@ -1,0 +1,28 @@
+body {
+  background-color: #f7fcef;
+  font-family: Arial, sans-serif;
+  padding: 20px 40px;
+  color: #000;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.core-value-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  gap: 140px;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
