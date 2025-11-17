@@ -58,3 +58,80 @@
       text-align: justify;
       margin: 0;
     }
+
+    body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.title {
+    text-align: center;
+    color: #048d3f;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    color: #6d6d6d;
+    font-size: 14px;
+}
+
+.testimonials {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 30%;
+    min-width: 280px;
+}
+
+.profile {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.profile img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.profile span {
+    color: #1c8b4c;
+    font-size: 13px;
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    padding-top: 30px;
+    border-top: 2px solid #1c8b4c;
+}
+
+.footer h2 {
+    color: #1c8b4c;
+    margin-bottom: 5px;
+}
+
+.phone {
+    font-size: 18px;
+    margin-top: 5px;
+}
