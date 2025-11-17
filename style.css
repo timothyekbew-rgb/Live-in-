@@ -1,10 +1,4 @@
 
-    body {
-      background-color: #e5ecf7;
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      color: #2a2a2a;
-    }
 
     .profile-box {
       max-width: 900px;
@@ -49,7 +43,7 @@
       font-weight: 700;
       font-size: 14px;
       margin: 0 0 20px 0;
-      color: #444444;
+      color: #606060;
     }
 
     .profile-box p {
