@@ -1,0 +1,54 @@
+.content-box {
+  max-width: 900px;           
+  margin: 40px auto;             
+  padding: 30px 40px;           
+  border: 2px solid #7ba2cf;     
+  border-radius: 8px;
+  background-image: url('Foto santamaria.jpeg'); 
+  background-size: cover;        
+  background-position: center;   
+  position: relative;
+  color: #2a2a2a;
+  font-family: Arial, sans-serif;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Overlay putih transparan di atas background */
+.content-box::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75); /* Overlay putih transparan */
+  border-radius: 8px;                           /* Sesuaikan dengan border container */
+  z-index: 1;
+}
+
+/* Konten di atas overlay */
+.content-box > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Judul utama */
+.content-box h1 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #006837; /* Hijau gelap */
+  margin-bottom: 6px;
+}
+
+/* Subjudul italic bold */
+.content-box h3 {
+  font-style: italic;
+  font-weight: 700;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+/* Paragraf teks */
+.content-box p {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+}
