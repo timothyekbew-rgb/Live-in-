@@ -2,7 +2,7 @@
 body {
   margin: 0;
   background-color: #f0f5f1;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,17 +18,16 @@ body {
 /* Kontainer utama dengan background hijau gelap dan sudut membulat */
 .container-ppdb {
   display: flex;
-  gap: 100px;
-  background-color: #000000;
+  background-color: #ffffff;
   border-radius: 80px;
-  max-width: 1100px;
+  width: fit-content;
   padding: 60px;
   color: rgb(18, 78, 16);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
 
   /* tambahkan padding atas agar tidak tertutup navbar */
-  padding-top: calc(var(--navbar-height) + 20px);
+  /* padding-top: calc(var(--navbar-height) + 20px); */
 }
 
 /* Judul di kiri: font besar, warna hijau muda */
@@ -88,7 +87,7 @@ body {
   height: var(--navbar-height);
   z-index: 9999;
   background-color: rgba(232, 252, 213, 0.95);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* Atur isi navbar agar sejajar dan terpusat dengan layout */
@@ -110,18 +109,29 @@ body {
 }
 
 /* Pastikan elemen target anchor tidak tertutup navbar saat di-scroll/jump */
-h1, h2, h3, section, .container-ppdb, .profile-box {
+h1,
+h2,
+h3,
+section,
+.container-ppdb,
+.profile-box {
   /* tambahan margin aman agar terlihat di bawah navbar */
   scroll-margin-top: calc(var(--navbar-height) + 12px);
 }
 
 /* Responsive: jika navbar lebih tinggi di layar kecil, ubah variabel */
 @media (max-width: 850px) {
-  :root { --navbar-height: 110px; }
-  body { padding-top: var(--navbar-height); }
+  :root {
+    --navbar-height: 110px;
+  }
+  body {
+    padding-top: var(--navbar-height);
+  }
 
   .navbar-bg .container,
-  header.navbar { padding: 12px 18px; }
+  header.navbar {
+    padding: 12px 18px;
+  }
   .container {
     flex-direction: column;
     padding: 40px 30px;
@@ -132,7 +142,9 @@ h1, h2, h3, section, .container-ppdb, .profile-box {
     justify-content: center;
     margin-bottom: 40px;
   }
-  .content { font-size: 0.95rem; }
+  .content {
+    font-size: 0.95rem;
+  }
   .quote {
     text-align: center;
     margin-top: 1.8em;
@@ -140,4 +152,6 @@ h1, h2, h3, section, .container-ppdb, .profile-box {
 }
 
 /* optional: smooth scrolling */
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}

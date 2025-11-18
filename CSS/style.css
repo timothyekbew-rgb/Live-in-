@@ -1,8 +1,8 @@
 body {
   margin: 0px;
   padding: 0px;
+  margin-top: 50px;
 }
-
 .profile-box {
   padding: 30px;
   padding-top: 0px;
@@ -56,13 +56,6 @@ body {
   line-height: 1.6;
   text-align: justify;
   margin: 0;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0px 0;
 }
 
 .title {
@@ -174,6 +167,10 @@ footer {
 }
 
 .keunggulan-section {
+  padding-bottom: 25px;
+  padding-top: 25px;
+
+  border-radius: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,4 +256,15 @@ footer {
 .about-us p {
   margin: 5px;
   padding-left: 5px;
+}
+
+.navbar-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-height);
+  z-index: 9999;
+  background-color: rgba(232, 252, 213, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
