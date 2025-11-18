@@ -1,3 +1,10 @@
+body {
+  background-color: #fcf9ef;
+  font-family: Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  color: #000;
+}
 .core-value {
   text-align: center;
   background-color: #e9f5de;      
