@@ -1,6 +1,12 @@
+body {
+  background-color: #fcf9ef;
+  font-family: Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  color: #000;
+}
 .core-value {
   max-width: 700px;
-  padding: 20px;
   background: #f7faef;
   border-radius: 8px;
   font-family: sans-serif;
@@ -12,10 +18,10 @@
 
 .row {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   margin-bottom: 8px;
 }
 
 .row > div:nth-child(2) {
-  text-align: left; 
+  text-align: left;
 }
