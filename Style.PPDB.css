@@ -10,6 +10,11 @@ body {
   padding: 20px;
 }
 
+/* set navbar height as a variable so padding stays in sync */
+:root {
+  --navbar-height: 72px; /* ubah jika navbar lebih tinggi */
+}
+
 /* Kontainer utama dengan background hijau gelap dan sudut membulat */
 .container-ppdb {
   display: flex;
@@ -21,6 +26,9 @@ body {
   color: rgb(18, 78, 16);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
+
+  /* tambahkan padding atas agar tidak tertutup navbar */
+  padding-top: calc(var(--navbar-height) + 20px);
 }
 
 /* Judul di kiri: font besar, warna hijau muda */
@@ -77,9 +85,9 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  height: var(--navbar-height);
   z-index: 9999;
-  background-color: rgba(232, 252, 213, 0.95); /* sesuaikan jika perlu */
+  background-color: rgba(232, 252, 213, 0.95);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
@@ -91,18 +99,27 @@ header.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 24px;
+  height: 100%;
+  padding: 0 24px; /* vertikal diatur oleh --navbar-height */
   box-sizing: border-box;
 }
 
 /* Beri jarak di atas konten utama supaya tidak tertutup navbar */
 body {
-  padding-top: 72px; /* ubah sesuai tinggi navbar (mis. 72px) */
+  padding-top: var(--navbar-height);
 }
 
-/* Jika navbar menjadi lebih tinggi di layar kecil, sesuaikan */
+/* Pastikan elemen target anchor tidak tertutup navbar saat di-scroll/jump */
+h1, h2, h3, section, .container-ppdb, .profile-box {
+  /* tambahan margin aman agar terlihat di bawah navbar */
+  scroll-margin-top: calc(var(--navbar-height) + 12px);
+}
+
+/* Responsive: jika navbar lebih tinggi di layar kecil, ubah variabel */
 @media (max-width: 850px) {
-  body { padding-top: 110px; }
+  :root { --navbar-height: 110px; }
+  body { padding-top: var(--navbar-height); }
+
   .navbar-bg .container,
   header.navbar { padding: 12px 18px; }
   .container {
@@ -115,11 +132,12 @@ body {
     justify-content: center;
     margin-bottom: 40px;
   }
-  .content {
-    font-size: 0.95rem;
-  }
+  .content { font-size: 0.95rem; }
   .quote {
     text-align: center;
     margin-top: 1.8em;
   }
 }
+
+/* optional: smooth scrolling */
+html { scroll-behavior: smooth; }
