@@ -168,7 +168,31 @@ footer {
 .menu a:hover {
   color: #0d642e;
 }
-
+.about-us {
+  display: flex;
+}
 .about-us h1 {
   color: #0d642e;
+}
+.about-us-img {
+  width: 300px;
+  height: 175px;
+  background-color: black;
+}
+
+.about-us .column {
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  justify-content: space-around; /* equal spacing on left & right of each column */
+  flex-wrap: wrap;
+  margin-bottom: 20px; /* space between rows */
+}
+
+.column {
+  display: flex;
+  justify-content: center; /* center the image inside */
+}
+.about-us .column {
 }
