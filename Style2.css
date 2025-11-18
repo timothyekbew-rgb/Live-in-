@@ -90,3 +90,28 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.menu {
+  display: flex;
+  gap: 0;
+}
+
+/* Style dasar */
+.menu a {
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+/* Garis hanya di antara item (bukan kiri-kanan penuh) */
+.menu a:not(:last-child) {
+  border-right: 2px solid #0d642e;
+}
+
+/* Hover → background hijau & text putih */
+.menu a:hover {
+  background-color: #0d642e;
+  color: white;
+}
