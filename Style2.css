@@ -1,21 +1,64 @@
 .core-value {
-  max-width: 700px;
-  padding: 20px;
-  background: #f7faef;
-  border-radius: 8px;
-  font-family: sans-serif;
+  text-align: center;
+  background-color: #e9f5de;      
+  border-radius: 12px;
+  padding: 30px 40px;
+  max-width: 900px;
+  margin: 2rem auto;              
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #1e4d2b;
 }
 
+/* Judul */
 .core-value h2 {
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.row {
+/* Kontainer grid 3 kolom, lebar konten otomatis */
+.core-value-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
-  margin-bottom: 8px;
+  grid-template-columns: repeat(3, auto); 
+  column-gap: 40px;                         
+  row-gap: 30px;                           
 }
 
-.row > div:nth-child(2) {
-  text-align: left; 
+/* Tiap item: flex agar icon dan teks sejajar */
+.core-value-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 200px;    
+}
+
+/* Styling lingkaran ikon */
+.core-value-item .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #42794f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: #e9f5de;
+  flex-shrink: 0;
+}
+
+/* Icon svg */
+.core-value-item .icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: invert(28%) sepia(44%) saturate(220%) hue-rotate(87deg) brightness(94%) contrast(83%);
+}
+
+/* Teks */
+.core-value-item p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #2a593e;
 }
