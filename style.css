@@ -54,6 +54,7 @@
 }
 
 .container {
+  align-content: ce;
   width: 100%;
   max-width: 1200px;
   margin: auto;

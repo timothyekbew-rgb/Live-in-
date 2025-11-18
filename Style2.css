@@ -1,19 +1,21 @@
+/* ================= GLOBAL ================= */
 body {
   background-color: #fcf9ef;
   font-family: Arial, sans-serif;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   color: #000;
 }
+
+/* ================= CARD UTAMA ================= */
 .core-value {
   text-align: center;
-  background-color: #e9f5de;      
+  background-color: rgb(233, 245, 222);
   border-radius: 12px;
   padding: 30px 40px;
-  max-width: 900px;
-  margin: 2rem auto;              
+  max-width: fit-content;
+  margin: 2rem auto;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
   color: #1e4d2b;
 }
 
@@ -24,48 +26,67 @@ body {
   margin-bottom: 20px;
 }
 
-/* Kontainer grid 3 kolom, lebar konten otomatis */
-.core-value-container {
+/* ================= GRID PARENT ================= */
+.core-value-parent {
   display: grid;
-  grid-template-columns: repeat(3, auto); 
-  column-gap: 40px;                         
-  row-gap: 30px;                           
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  gap: 25px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Tiap item: flex agar icon dan teks sejajar */
+/* Agar item ikut grid parent */
+.core-value-container {
+  display: contents;
+}
+
+/* ================= ITEM (ICON + TEKS) ================= */
 .core-value-item {
   display: flex;
   align-items: center;
   gap: 12px;
-  min-width: 200px;    
 }
 
-/* Styling lingkaran ikon */
+/* ===== LINGKARAN ICON ===== */
 .core-value-item .icon {
-  width: 48px;
-  height: 48px;
+  width: 70px; /* ukuran lingkaran */
+  height: 70px;
   border-radius: 50%;
   border: 2px solid #42794f;
+  background-color: #f9fff3;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
-  background-color: #e9f5de;
   flex-shrink: 0;
 }
 
-/* Icon svg */
+/* ===== GAMBAR ICON ===== */
 .core-value-item .icon img {
-  width: 50px;
-  height: 50px;
+  width: 55px; /* icon lebih kecil dari lingkaran */
+  height: 55px;
   object-fit: contain;
-  filter: invert(28%) sepia(44%) saturate(220%) hue-rotate(87deg) brightness(94%) contrast(83%);
+  display: block;
+  filter: invert(28%) sepia(44%) saturate(220%) hue-rotate(87deg)
+    brightness(94%) contrast(83%);
 }
 
-/* Teks */
+/* ===== TEKS ===== */
 .core-value-item p {
   margin: 0;
   font-weight: 500;
   font-size: 1rem;
   color: #2a593e;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .core-value-parent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .core-value-parent {
+    grid-template-columns: 1fr;
+  }
 }
