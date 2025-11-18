@@ -1,28 +1,21 @@
-body {
-  background-color: #f7fcef;
-  font-family: Arial, sans-serif;
-  padding: 20px 40px;
-  color: #000;
+.core-value {
+  max-width: 700px;
+  padding: 20px;
+  background: #f7faef;
+  border-radius: 8px;
+  font-family: sans-serif;
 }
 
-h2 {
-  font-weight: 700;
-  margin-bottom: 24px;
-}
-
-.core-value-container {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.core-value h2 {
+  margin-bottom: 15px;
 }
 
 .row {
-  display: flex;
-  gap: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  margin-bottom: 8px;
 }
 
-.column {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
+.row > div:nth-child(2) {
+  text-align: left; 
 }
