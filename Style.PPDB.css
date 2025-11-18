@@ -1,0 +1,125 @@
+/* Reset dan set font umum */
+body {
+  margin: 0;
+  background-color: #f0f5f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Kontainer utama dengan background hijau gelap dan sudut membulat */
+.container-ppdb {
+  display: flex;
+  gap: 100px;
+  background-color: #000000;
+  border-radius: 80px;
+  max-width: 1100px;
+  padding: 60px;
+  color: rgb(18, 78, 16);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+/* Judul di kiri: font besar, warna hijau muda */
+.title {
+  flex: 1;
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #4ce28a;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  margin: 0;
+}
+
+.title span {
+  color: #28ad58;
+}
+
+/* Konten teks di kanan */
+.content {
+  flex: 2.5;
+  font-size: 1rem;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.content p {
+  margin-bottom: 1.5em;
+}
+
+/* Highlight teks penting */
+.content strong {
+  font-weight: 700;
+  color: #9cfcaf;
+}
+
+.content em {
+  font-style: italic;
+  color: #a0e8ad;
+}
+
+/* Kutipan di bawah kanan */
+.quote {
+  margin-top: 2em;
+  font-style: italic;
+  color: #b4edc8;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Navbar tetap di atas */
+.navbar-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(232, 252, 213, 0.95); /* sesuaikan jika perlu */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Atur isi navbar agar sejajar dan terpusat dengan layout */
+.navbar-bg .container,
+header.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  box-sizing: border-box;
+}
+
+/* Beri jarak di atas konten utama supaya tidak tertutup navbar */
+body {
+  padding-top: 72px; /* ubah sesuai tinggi navbar (mis. 72px) */
+}
+
+/* Jika navbar menjadi lebih tinggi di layar kecil, sesuaikan */
+@media (max-width: 850px) {
+  body { padding-top: 110px; }
+  .navbar-bg .container,
+  header.navbar { padding: 12px 18px; }
+  .container {
+    flex-direction: column;
+    padding: 40px 30px;
+    border-radius: 60px;
+  }
+  .title {
+    font-size: 2.6rem;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .content {
+    font-size: 0.95rem;
+  }
+  .quote {
+    text-align: center;
+    margin-top: 1.8em;
+  }
+}
