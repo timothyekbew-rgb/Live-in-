@@ -19,12 +19,12 @@ body {
 .container-ppdb {
   display: flex;
   gap: 100px;
-  background-color: #000000;
+  background-color: #f6faf6;
   border-radius: 80px;
   max-width: 1100px;
   padding: 60px;
   color: rgb(18, 78, 16);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(3, 142, 61, 0.3);
   box-sizing: border-box;
 
   /* tambahkan padding atas agar tidak tertutup navbar */
@@ -36,7 +36,7 @@ body {
   flex: 1;
   font-size: 3.4rem;
   font-weight: 700;
-  color: #4ce28a;
+  color: #eceded;
   display: flex;
   align-items: center;
   user-select: none;
