@@ -113,5 +113,5 @@ body {
 /* Hover → background hijau & text putih */
 .menu a:hover {
   background-color: #0d642e;
-  color: white;
+  color: rgb(255, 255, 255);
 }

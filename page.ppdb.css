@@ -1,0 +1,92 @@
+ 
+.container-ppdb {
+  display: flex;
+  gap: 100px;
+  background-color: #2caf3e;
+  border-radius: 80px;
+  max-width: 1100px;
+  padding: 60px;
+  color: rgb(10, 73, 8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  align-items: center;
+  margin: 12px auto 0; /* center horizontally inside its parent */
+}
+
+/* Styling for the right column (teks 'Tentang Sekolah') */
+.container-ppdb .right {
+  color: #000000; /* warna teks utama: hijau gelap */
+  font-size: 16px;
+  line-height: 1.75;
+}
+.container-ppdb .right p {
+  margin-bottom: 1.1rem;
+  color: #f8f8f8;
+}
+.container-ppdb .right strong {
+  color: #00ff62; /* highlight untuk bold */
+  font-weight: 700;
+}
+.container-ppdb .right em {
+  color: #00ff62;
+  font-style: italic;
+}
+.container-ppdb .right .quote {
+  color: #000702;
+  font-weight: 600;
+  text-align: right;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .container-ppdb .right { font-size: 15px; }
+}
+.title {
+  flex: 1;
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #06ff6e;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  margin: 0;
+}
+.content {
+  flex: 2.5;
+  font-size: 1rem;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+.content p {
+  margin-bottom: 1.5em;
+}
+
+/* Highlight teks penting */
+.content strong {
+  font-weight: 700;
+  color: #9cfcaf;
+}
+
+.content em {
+  font-style: italic;
+  color: #a0e8ad;
+}
+
+/* Kutipan di bawah kanan */
+.quote {
+  margin-top: 2em;
+  font-style: italic;
+  color: #b4edc8;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Tambah spacing agar .profile-box dan .container-ppdb tidak menempel */
+.profile-box {
+  margin-bottom: 36px;
+}
+
+.container-ppdb {
+  margin-top: 50px; /* jarak tambahan jika diperlukan */
+}
+html { scroll-behavior: smooth; }
