@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Halaman Login</title>
-    <link rel="stylesheet" href="Style.login.css">
-</head>
-<body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="#" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Masuk</button>
-        </form>
-        <div class="forgot-password">
-            <a href="#">Lupa Password?</a>
-        </div>
+
+    <link rel="stylesheet" href="CSS/Style.login.css" />
+    <link rel="stylesheet" href="CSS/container.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/Style2.css" />
+    <link rel="stylesheet" href="CSS/font.css" />
+  </head>
+  <body>
+    <div class="navbar-bg">
+      <div class="container">
+        <!-- NAVBAR -->
+        <header class="navbar">
+          <div class="left-section">
+            <img src="assets/img/cropped-logo.png" alt="logo" class="logo" />
+            <div class="title1 tektur">
+              <span>Campus Ursuline</span><br />
+              <span>Surabaya</span>
+            </div>
+          </div>
+          <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="Page.project.html">Project</a>
+            <a href="Page.PPDB.html">PPDB</a>
+            <a href="Login.page.html" class="menu-login tektur">LOGIN</a>
+          </nav>
+        </header>
+      </div>
     </div>
-</body>
+    <div class="login-container" style="padding-top: 50px">
+      <div class="container-2">
+        <div class="login-main">
+          <h2 class="tektur">Login</h2>
+          <form action="#" method="post">
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Masuk</button>
+          </form>
+          <div class="forgot-password">
+            <a href="#">Lupa Password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
