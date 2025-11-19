@@ -139,5 +139,70 @@ h1, h2, h3, section, .container-ppdb, .profile-box {
   }
 }
 
-/* optional: smooth scrolling */
 html { scroll-behavior: smooth; }
+zzzz
+ {
+    font-family: Arial, sans-serif;
+    background-color: #000000; 
+    margin: 0;
+    padding: 40px 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.title2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.card {
+    background: rgb(126, 120, 120);
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.list {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.list strong {
+    font-weight: bold;
+}
+
+.list ol {
+    margin-top: 10px;
+}
+
+.limit-text {
+    margin-top: 10px;
+    font-style: italic;
+    color: #444;
+    font-size: 14px;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+    .card {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
