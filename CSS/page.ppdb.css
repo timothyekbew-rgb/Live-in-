@@ -1,8 +1,7 @@
- 
 .container-ppdb {
   display: flex;
   gap: 100px;
-  background-color: #2caf3e;
+  background-color: #21722b;
   border-radius: 80px;
   max-width: 1100px;
   padding: 60px;
@@ -39,7 +38,9 @@
 }
 
 @media (max-width: 900px) {
-  .container-ppdb .right { font-size: 15px; }
+  .container-ppdb .right {
+    font-size: 15px;
+  }
 }
 .title {
   flex: 1;
@@ -89,4 +90,6 @@
 .container-ppdb {
   margin-top: 50px; /* jarak tambahan jika diperlukan */
 }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
