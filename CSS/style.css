@@ -150,12 +150,15 @@ footer {
 
 .title1 {
   font-size: 24px;
-  color: #08662c;
+  color: #006837;
   font-weight: 600;
   line-height: 1.1;
 }
 
 .menu a {
+  border-radius: 17.5px;
+  border-color: #0a5d1c;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   margin-left: 30px;
   text-decoration: none;
   font-size: 22px;
@@ -164,9 +167,19 @@ footer {
 }
 
 .menu a:hover {
+  border-radius: 35px;
+
   color: #ffffff;
 }
-
+.menu .menu-login {
+  background-color: #18211d;
+  color: #ffffff;
+}
+.menu .menu-login:hover {
+  border-radius: 35px;
+  background-color: #ffffff;
+  color: #006837;
+}
 .keunggulan-section {
   padding-bottom: 25px;
   padding-top: 25px;
@@ -260,6 +273,8 @@ footer {
 }
 
 .navbar-bg {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
